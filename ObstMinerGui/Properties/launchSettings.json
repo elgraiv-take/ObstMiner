@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ObstMinerGui": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

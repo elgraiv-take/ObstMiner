@@ -1,0 +1,75 @@
+﻿<Window
+    x:Class="ObstMinerGui.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ObstMinerGui"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="600"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <TabControl>
+            <TabItem Header="TabItem">
+                <Grid>
+                    <Button
+                        Width="65"
+                        Margin="0,10,10,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Command="{Binding Path=LockingProcessCommand}"
+                        Content="Button" />
+                    <TextBox
+                        Height="20"
+                        Margin="10,10,129,0"
+                        VerticalAlignment="Top"
+                        Text="{Binding Path=CheckingFileName}" />
+                    <ScrollViewer Margin="10,35,10,10">
+                        <ItemsControl ItemsSource="{Binding Path=Processes}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding Path=Name}" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Path=ProcessId}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid>
+                    <Button
+                        Margin="10,10,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Command="{Binding Path=UpdateTableCommand}"
+                        Content="Button" />
+                    <ScrollViewer Margin="10,35,10,10">
+                        <ItemsControl ItemsSource="{Binding Path=Ports}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

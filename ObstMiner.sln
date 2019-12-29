@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstMiner", "ObstMiner\ObstMiner.csproj", "{D66B84DF-74F0-4884-9911-E43DD2E3E05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstMinerGui", "ObstMinerGui\ObstMinerGui.csproj", "{BD7DE961-0B0C-4CC6-BCFE-4D6C3338EB16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87F4F7B3-3FA4-4C57-AFCA-C38EE65952C0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D66B84DF-74F0-4884-9911-E43DD2E3E05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66B84DF-74F0-4884-9911-E43DD2E3E05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66B84DF-74F0-4884-9911-E43DD2E3E05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66B84DF-74F0-4884-9911-E43DD2E3E05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7DE961-0B0C-4CC6-BCFE-4D6C3338EB16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7DE961-0B0C-4CC6-BCFE-4D6C3338EB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7DE961-0B0C-4CC6-BCFE-4D6C3338EB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7DE961-0B0C-4CC6-BCFE-4D6C3338EB16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1385AE08-21BB-42B9-9858-4A39243FC268}
+	EndGlobalSection
+EndGlobal
